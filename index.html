@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bravus Urban Wear • Sistema de Vendas</title>
+<meta name="theme-color" content="#1C1C1E">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bravus">
+<style>
+  html, body { margin: 0; height: 100%; background: #1C1C1E; color: #F2F2F2; font: 15px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  #load { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; }
+  #load img { width: 96px; height: 96px; border-radius: 22px; }
+  #load p { margin: 0; opacity: .75; }
+  #load a { color: inherit; opacity: .8; }
+  #app { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; opacity: 0; transition: opacity .25s; }
+  #app.on { opacity: 1; }
+  @media (prefers-reduced-motion: reduce) { #app { transition: none; } }
+</style>
+</head>
+<body>
+<div id="load"><img src="icon-192.png" alt=""><p>Abrindo o sistema…</p><a id="direct" href="https://script.google.com/macros/s/AKfycbzM0RGrW6vHKIQO3c9DZgbZRCW3EcEYd0aL1euZLLh42ooeBcJILqO_azrhmH03OQqB/exec" hidden>Demorando? Abrir direto</a></div>
+<iframe id="app" title="Bravus Urban Wear • Sistema de Vendas" src="https://script.google.com/macros/s/AKfycbzM0RGrW6vHKIQO3c9DZgbZRCW3EcEYd0aL1euZLLh42ooeBcJILqO_azrhmH03OQqB/exec" allow="clipboard-read; clipboard-write; camera; fullscreen"></iframe>
+<script>
+  var f = document.getElementById('app');
+  f.addEventListener('load', function () { f.classList.add('on'); });
+  setTimeout(function () { document.getElementById('direct').hidden = false; }, 20000);
+</script>
+</body>
+</html>
